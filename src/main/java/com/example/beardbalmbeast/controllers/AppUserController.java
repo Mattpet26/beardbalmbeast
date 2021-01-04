@@ -25,8 +25,14 @@ public class AppUserController {
     }
 
     @GetMapping("/store")
-    public String renderAbout(Principal principal, Model m) {
+    public String renderStore(Principal principal, Model m) {
         m.addAttribute("user", principal);
         return "storeMain";
+    }
+
+    @GetMapping("/products")
+    public String renderProductPage(Principal principal, Model m) {
+        m.addAttribute("user", principal);
+        return "productPage";
     }
 }

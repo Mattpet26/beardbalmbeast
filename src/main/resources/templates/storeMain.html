@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head th:replace="fragments/headerFrag :: head">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
+    <nav th:replace="fragments/navFrag :: nav"></nav>
 
     <h1>This page should display clickable images that direct to that products page</h1>
     <h2>Users should get here by clicking "Store"</h2>
+
+    <footer th:replace="fragments/footerFrag :: footer"></footer>
 
 </body>
 </html>

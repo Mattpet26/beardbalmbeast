@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head th:replace="fragments/headerFrag :: head">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
+    <nav th:replace="fragments/navFrag :: nav"></nav>
 
     <h1>This page should display the unique products information. Also direct to all other product information pages.</h1>
+
+    <footer th:replace="fragments/footerFrag :: footer"></footer>
 
 </body>
 </html>
