@@ -7,8 +7,41 @@
 <body>
     <nav th:replace="fragments/navFrag :: nav"></nav>
 
-    <h1>This page should display clickable images that direct to that products page</h1>
-    <h2>Users should get here by clicking "Store"</h2>
+    <div class="collection text-centered" style="width:100%; background-color:#666666; padding-top:100px">
+        <h1 style="color:white">Collections</h1>
+    </div>
+
+    <div class="clickyImages text-center">
+        <div class="col-md-12"></div>
+        <div class="row">
+            <hr style="width:10%; border-top: 2px solid grey;">
+            <div class="col-md-2" style="padding:15px">
+                <a href="#"><img src="https://via.placeholder.com/200"></a>
+                <div class="carousel-caption">
+                    <h1>Product 1</h1>
+                </div>
+            </div>
+            <div class="col-md-2" style="padding:15px">
+                <a href="#"><img src="https://via.placeholder.com/200"></a>
+                <div class="carousel-caption">
+                    <h1>Product 2</h1>
+                </div>
+            </div>
+            <div class="col-md-2" style="padding:15px">
+                <a href="#"><img src="https://via.placeholder.com/200"></a>
+                <div class="carousel-caption">
+                    <h1>Product 3</h1>
+                </div>
+            </div>
+            <div class="col-md-2" style="padding:15px">
+                <a href="#"><img src="https://via.placeholder.com/200"></a>
+                <div class="carousel-caption">
+                    <h1>Product 4</h1>
+                </div>
+            </div>
+            <hr style="width:10%; border-top: 2px solid grey">
+        </div>
+    </div>
 
     <footer th:replace="fragments/footerFrag :: footer"></footer>
 
