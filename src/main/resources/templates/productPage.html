@@ -7,15 +7,13 @@
 <body>
     <nav th:replace="fragments/navFrag :: nav"></nav>
 
-    <h1>This page should display the unique products information. Also direct to all other product information pages.</h1>
+    <h1 <!-- th:text="${Products.productType}"-->This should display the unique product type that was selected</h1>
 
-    <!-- ------------------Thymleaf start here th:each="product : ${products}" -------------------------- -->
+    <!-- ------------------Thymleaf start here th:each="product : ${products.SPECIFIED product type clicked on}" -------------------------- -->
     <!-- ------------------ th:text="${products.productName}" -------------------------- -->
     <!-- ------------------ th:text="${products.productPrice}" -------------------------- -->
     <!-- ------------------ th:text="${products.productStockNumber}" -------------------------- -->
     <!-- ------------------ th:Image="${products.productImage}" -------------------------- -->
-    <!-- ------------------ th:text="${product.productType}" -------------------------- -->
-
 
     <footer th:replace="fragments/footerFrag :: footer"></footer>
 
