@@ -9,6 +9,10 @@
     <h1>Welcome to the home page</h1>
     <nav th:replace="fragments/navFrag :: nav"></nav>
 
+<!--    Create a side-bar for the login/sign-up route. Bootstrap has some examples with a walkthrough on how to do this-->
+<!--    https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/index.html-->
+<!--    The sidebar will pull the screen from the right, showing the user all the options for login/signup-->
+<!--    The sidebar will probably have to be a fragment, as it falls within the nav bar. Easy access to login on every page-->
 
     <div class="mainImage text-center">
         <div class="col-md-12"></div>
@@ -27,25 +31,25 @@
         <div class="col-md-12"></div>
         <div class="row">
             <div class="col-md-3" style="padding:15px">
-                <a href="#"><img src="https://via.placeholder.com/250"></a>
+                <a href="/productPage"><img src="https://via.placeholder.com/250"></a>
                 <div class="carousel-caption">
                     <h1>Product 1</h1>
                 </div>
             </div>
             <div class="col-md-3" style="padding:15px">
-                <a href="#"><img src="https://via.placeholder.com/250"></a>
+                <a href="/productPage"><img src="https://via.placeholder.com/250"></a>
                 <div class="carousel-caption">
                     <h1>Product 2</h1>
                 </div>
             </div>
             <div class="col-md-3" style="padding:15px">
-                <a href="#"><img src="https://via.placeholder.com/250"></a>
+                <a href="/productPage"><img src="https://via.placeholder.com/250"></a>
                 <div class="carousel-caption">
                     <h1>Product 3</h1>
                 </div>
             </div>
             <div class="col-md-3" style="padding:15px">
-                <a href="#"><img src="https://via.placeholder.com/250"></a>
+                <a href="/productPage"><img src="https://via.placeholder.com/250"></a>
                 <div class="carousel-caption">
                     <h1>Product 4</h1>
                 </div>
@@ -64,6 +68,11 @@
                 </div>
             </div>
         </div>
+
+<!--    The sign up for emails here within the footer looks like there is bootstrap dependencies we need.-->
+<!--    https://www.codejava.net/frameworks/spring-boot/email-sending-tutorial -->
+<!--    Follow that links instructions, looks like there is a good walk-through how to setup this function.-->
+<!--    Make sure to modify this to be within the footer fragment. This process will be useful elsewhere on the site-->
 
     <footer th:replace="fragments/footerFrag :: footer"></footer>
 </body>
